@@ -1,0 +1,349 @@
+2021
+Every Sunday	 	Sunday
+The first day of January	1 January	Friday
+Lunar New Year's Day	12 February	Friday
+The second day of Lunar New Year	13 February	Saturday
+The fourth day of Lunar New Year	15 February	Monday
+Good Friday	2 April	Friday
+The day following Good Friday	3 April	Saturday
+The day following Ching Ming Festival	5 April	Monday
+The day following Easter Monday	6 April	Tuesday
+Labour Day	1 May	Saturday
+Birthday of the Buddha	19 May	Wednesday
+Tuen Ng Festival	14 June	Monday
+Hong Kong Special Administrative Region Establishment Day	1 July	Thursday
+The day following the Chinese Mid-Autumn Festival	22 September	Wednesday
+National Day	1 October	Friday
+Chung Yeung Festival	14 October	Thursday
+Christmas Day	25 December	Saturday
+The first weekday after Christmas Day	27 December	Monday
+
+
+2020
+Every Sunday	 	Sunday
+The first day of January	1 January	Wednesday
+Lunar New Year's Day	25 January	Saturday
+The third day of Lunar New Year	27 January	Monday
+The fourth day of Lunar New Year*	28 January	Tuesday
+Ching Ming Festival	4 April	Saturday
+Good Friday	10 April	Friday
+The day following Good Friday	11 April	Saturday
+Easter Monday	13 April	Monday
+Birthday of the Buddha	30 April	Thursday
+Labour Day	1 May	Friday
+Tuen Ng Festival	25 June	Thursday
+Hong Kong Special Administrative Region Establishment Day	1 July	Wednesday
+National Day	1 October	Thursday
+The day following the Chinese Mid-Autumn Festival	2 October	Friday
+The day following Chung Yeung Festival*	26 October	Monday
+Christmas Day	25 December	Friday
+The first weekday after Christmas Day	26 December	Saturday
+
+
+2019
+
+Every Sunday	 	Sunday
+The first day of January	1 January	Tuesday
+Lunar New Year's Day	5 February	Tuesday
+The second day of Lunar New Year	6 February	Wednesday
+The third day of Lunar New Year	7 February	Thursday
+Ching Ming Festival	5 April	Friday
+Good Friday	19 April	Friday
+The day following Good Friday	20 April	Saturday
+Easter Monday	22 April	Monday
+Labour Day	1 May	Wednesday
+The day following the Birthday of the Buddha	13 May	Monday
+Tuen Ng Festival	7 June	Friday
+Hong Kong Special Administrative Region Establishment Day	1 July	Monday
+The day following the Chinese Mid-Autumn Festival	14 September	Saturday
+National Day	1 October	Tuesday
+Chung Yeung Festival	7 October	Monday
+Christmas Day	25 December	Wednesday
+The first weekday after Christmas Day	26 December	Thursday
+
+2018
+
+Every Sunday	 	Sunday
+The first day of January	1 January	Monday
+Lunar New Year's Day	16 February	Friday
+The second day of Lunar New Year	17 February	Saturday
+The fourth day of Lunar New Year	19 February	Monday
+Good Friday	30 March	Friday
+The day following Good Friday	31 March	Saturday
+Easter Monday	2 April	Monday
+Ching Ming Festival	5 April	Thursday
+Labour Day	1 May	Tuesday
+The Birthday of the Buddha	22 May	Tuesday
+Tuen Ng Festival	18 June	Monday
+The day following Hong Kong Special Administrative Region Establishment Day	2 July	Monday
+The day following the Chinese Mid-Autumn Festival	25 September	Tuesday
+National Day	1 October	Monday
+Chung Yeung Festival	17 October	Wednesday
+Christmas Day	25 December	Tuesday
+The first weekday after Christmas Day	26 December	Wednesday
+
+
+2017
+
+Every Sunday	 	Sunday
+The day following the first day of January	2 January	Monday
+Lunar New Year’s Day	28 January	Saturday
+The third day of Lunar New Year	30 January	Monday
+The fourth day of Lunar New Year	31 January	Tuesday
+Ching Ming Festival	4 April	Tuesday
+Good Friday	14 April	Friday
+The day following Good Friday	15 April	Saturday
+Easter Monday	17 April	Monday
+Labour Day	1 May	Monday
+The Birthday of the Buddha	3 May	Wednesday
+Tuen Ng Festival	30 May	Tuesday
+Hong Kong Special Administrative Region Establishment Day	1 July	Saturday
+The day following National Day	2 October	Monday
+The day following the Chinese Mid-Autumn Festival	5 October	Thursday
+Chung Yeung Festival	28 October	Saturday
+Christmas Day	25 December	Monday
+The first weekday after Christmas Day	26 December	Tuesday
+
+
+2016
+
+Every Sunday	 	Sunday
+The first day of January	1 January	Friday
+Lunar New Year’s Day	8 February	Monday
+The second day of Lunar New Year	9 February	Tuesday
+The third day of Lunar New Year	10 February	Wednesday
+Good Friday	25 March	Friday
+The day following Good Friday	26 March	Saturday
+Easter Monday	28 March	Monday
+Ching Ming Festival	4 April	Monday
+The day following the Labour Day	2 May	Monday
+The Birthday of the Buddha	14 May	Saturday
+Tuen Ng Festival	9 June	Thursday
+Hong Kong Special Administrative Region Establishment Day	1 July	Friday
+The day following the Chinese Mid-Autumn Festival	16 September	Friday
+National Day	1 October	Saturday
+The day following the Chung Yeung Festival	10 October	Monday
+The first weekday after Christmas Day	26 December	Monday
+The second weekday after Christmas Day	27 December	Tuesday
+
+
+2015
+
+Every Sunday	 	Sunday
+The first day of January	1 January	Thursday
+Lunar New Year’s Day	19 February	Thursday
+The second day of Lunar New Year	20 February	Friday
+The third day of Lunar New Year	21 February	Saturday
+Good Friday	3 April	Friday
+The day following Good Friday	4 April	Saturday
+The day following Ching Ming Festival*	6 April	Monday
+The day following Easter Monday*	7 April	Tuesday
+Labour Day	1 May	Friday
+The Birthday of the Buddha	25 May	Monday
+Tuen Ng Festival	20 June	Saturday
+Hong Kong Special Administrative Region Establishment Day	1 July	Wednesday
+The 70th anniversary day of the victory of the Chinese people's war of resistance against Japanese aggression†	3 September	Thursday
+The day following the Chinese Mid-Autumn Festival	28 September	Monday
+National Day	1 October	Thursday
+Chung Yeung Festival	21 October	Wednesday
+Christmas Day	25 December	Friday
+The first weekday after Christmas Day	26 December	Saturday
+
+
+
+
+
+2014
+
+
+Every Sunday	 	Sunday
+The first day of January	1 January	Wednesday
+Lunar New Year’s Day	31 January	Friday
+The second day of Lunar New Year	1 February	Saturday
+The fourth day of Lunar New Year	3 February	Monday
+Ching Ming Festival	5 April	Saturday
+Good Friday	18 April	Friday
+The day following Good Friday	19 April	Saturday
+Easter Monday	21 April	Monday
+Labour Day	1 May	Thursday
+The Birthday of the Buddha	6 May	Tuesday
+Tuen Ng Festival	2 June	Monday
+Hong Kong Special Administrative Region Establishment Day	1 July	Tuesday
+The day following the Chinese Mid-Autumn Festival	9 September	Tuesday
+National Day	1 October	Wednesday
+Chung Yeung Festival	2 October	Thursday
+Christmas Day	25 December	Thursday
+The first weekday after Christmas Day	26 December	Friday
+
+
+
+
+
+
+2013
+
+
+Every Sunday	 	Sunday
+The first day of January	1 January	Tuesday
+The second day of Lunar New Year	11 February	Monday
+The third day of Lunar New Year	12 February	Tuesday
+The fourth day of Lunar New Year	13 February	Wednesday
+Good Friday	29 March	Friday
+The day following Good Friday	30 March	Saturday
+Easter Monday	1 April	Monday
+Ching Ming Festival	4 April	Thursday
+Labour Day	1 May	Wednesday
+The Birthday of the Buddha	17 May	Friday
+Tuen Ng Festival	12 June	Wednesday
+Hong Kong Special Administrative Region Establishment Day	1 July	Monday
+The day following the Chinese Mid-Autumn Festival	20 September	Friday
+National Day	1 October	Tuesday
+The day following Chung Yeung Festival	14 October	Monday
+Christmas Day	25 December	Wednesday
+The first weekday after Christmas Day	26 December	Thursday
+
+
+
+
+
+
+
+2012
+
+
+Every Sunday	 	Sunday
+The day following the first day of January	2 January	Monday
+Lunar New Year's Day	23 January	Monday
+The second day of the Lunar New Year	24 January	Tuesday
+The third day of the Lunar New Year	25 January	Wednesday
+Ching Ming Festival	4 April	Wednesday
+Good Friday	6 April	Friday
+The day following Good Friday	7 April	Saturday
+Easter Monday	9 April	Monday
+The Birthday of the Buddha	28 April	Saturday
+Labour Day	1 May	Tuesday
+Tuen Ng Festival	23 June	Saturday
+The day following Hong Kong Special Administrative Region Establishment Day	2 July	Monday
+The day following the Chinese Mid-Autumn Festival	1 October	Monday
+The day following National Day	2 October	Tuesday
+Chung Yeung Festival	23 October	Tuesday
+Christmas Day	25 December	Tuesday
+The first weekday after Christmas Day	26 December	Wednesday
+
+2011
+
+Every Sunday	 	Sunday
+The first day of January	1 January	Saturday
+Lunar New Year's Day	3 February	Thursday
+The second day of the Lunar New Year	4 February	Friday
+The third day of the Lunar New Year	5 February	Saturday
+Ching Ming Festival	5 April	Tuesday
+Good Friday	22 April	Friday
+The day following Good Friday	23 April	Saturday
+Easter Monday	25 April	Monday
+The day following Labour Day	2 May	Monday
+The Buddha’s Birthday	10 May	Tuesday
+Tuen Ng Festival	6 June	Monday
+Hong Kong Special Administrative Region Establishment Day	1 July	Friday
+The day following Chinese Mid-Autumn Festival	13 September	Tuesday
+National Day	1 October	Saturday
+Chung Yeung Festival	5 October	Wednesday
+The first weekday after Christmas Day	26 December	Monday
+The second weekday after Christmas Day	27 December	Tuesday
+
+
+
+2010
+
+Every Sunday	 	Sunday
+The first day of January	1 January	Friday
+The day preceding Lunar New Year's Day	13 February	Saturday
+The second day of the Lunar New Year	15 February	Monday
+The third day of the Lunar New Year	16 February	Tuesday
+Good Friday	2 April	Friday
+The day following Good Friday	3 April	Saturday
+Easter Monday	5 April	Monday
+The day following Ching Ming Festival	6 April	Tuesday
+Labour Day	1 May	Saturday
+The Buddha’s Birthday	21 May	Friday
+Tuen Ng Festival	16 June	Wednesday
+Hong Kong Special Administrative Region Establishment Day	1 July	Thursday
+The day following Chinese Mid-Autumn Festival	23 September	Thursday
+National Day	1 October	Friday
+Chung Yeung Festival	16 October	Saturday
+Christmas Day	25 December	Saturday
+The first weekday after Christmas Day	27 December	Monday
+
+
+
+
+
+2009
+
+
+Every Sunday	 	Sunday
+The first day of January	1 January	Thursday
+Lunar New Year’s Day	26 January	Monday
+The second day of the Lunar New Year	27 January	Tuesday
+The third day of the Lunar New Year	28 January	Wednesday
+Ching Ming Festival	4 April	Saturday
+Good Friday	10 April	Friday
+The day following Good Friday	11 April	Saturday
+Easter Monday	13 April	Monday
+Labour Day	1 May	Friday
+The Buddha’s Birthday	2 May	Saturday
+Tuen Ng Festival	28 May	Thursday
+Hong Kong Special Administrative Region Establishment Day	1 July	Wednesday
+National Day	1 October	Thursday
+Chinese Mid-Autumn Festival	3 October	Saturday
+Chung Yeung Festival	26 October	Monday
+Christmas Day	25 December	Friday
+The first weekday after Christmas Day	26 December	Saturday
+
+
+
+
+2008
+
+
+Every Sunday	 	Sunday
+The first day of January	1 January	Tuesday
+Lunar New Year’s Day	7 February	Thursday
+The second day of the Lunar New Year	8 February	Friday
+The third day of the Lunar New Year	9 February	Saturday
+Good Friday	21 March	Friday
+The day following Good Friday	22 March	Saturday
+Easter Monday	24 March	Monday
+Ching Ming Festival	4 April	Friday
+Labour Day	1 May	Thursday
+The Buddha’s Birthday	12 May	Monday
+The day following Tuen Ng Festival	9 June	Monday
+Hong Kong Special Administrative Region Establishment Day	1 July	Tuesday
+The day following Chinese Mid-Autumn Festival	15 September	Monday
+National Day	1 October	Wednesday
+Chung Yeung Festival	7 October	Tuesday
+Christmas Day	25 December	Thursday
+The first weekday after Christmas Day	26 December	Friday
+
+2007
+
+
+Every Sunday	 	Sunday
+The first day of January	1 January	Monday
+The day preceding Lunar New Year's Day	17 February	Saturday
+The second day of the Lunar New Year	19 February	Monday
+The third day of the Lunar New Year	20 February	Tuesday
+Ching Ming Festival	5 April	Thursday
+Good Friday	6 April	Friday
+The day following Good Friday	7 April	Saturday
+Easter Monday	9 April	Monday
+Labour Day	1 May	Tuesday
+The Buddha's Birthday	24 May	Thursday
+Tuen Ng Festival	19 June	Tuesday
+The day following Hong Kong Special Administrative Region Establishment Day	2 July	Monday
+The day following Chinese Mid-Autumn Festival	26 September	Wednesday
+National Day	1 October	Monday
+Chung Yeung Festival	19 October	Friday
+Christmas Day	25 December	Tuesday
+The first weekday after Christmas Day	26 December	Wednesday
+
