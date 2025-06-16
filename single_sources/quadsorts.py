@@ -2,6 +2,9 @@
 
 """
 The idea is that if you compare numbers in a N^2 nested for loop and swap them, in many cases they seem to be sorted.
+
+Probably "inspired" by https://arxiv.org/abs/2110.01111 (Is this the simplest (and most surprising) sorting algorithm ever? - Stanley P. Y. Fung)
+
 """
 
 import itertools
