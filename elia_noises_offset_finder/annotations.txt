@@ -78,35 +78,17 @@
 02:49:22.323 - Howling wolf
 02:50:08.403 - Howling wolf
 02:50:44.712 - Howling wolf
-02:51:50.389 - Howling wolf
-02:51:50.548 - Howling wolf
 02:52:53.286 - lue-and-white flycatche
 02:53:55.302 - Cuckoo
 02:54:26.000 - Camera shutter
 02:55:02.992 - Robot fight
 02:55:29.296 - Crow
 02:55:55.066 - Sea lion
-02:56:01.274 - Sea lion
-02:56:01.284 - Sea lion
 02:56:26.596 - Sea lion
 02:57:09.412 - Wiping
 02:57:38.105 - 
 02:58:00.569 - Sparrow
 02:58:37.966 - Electric sound
-02:58:44.833 - Electric sound
-02:58:44.844 - Electric sound
-02:58:45.228 - Electric sound
-02:58:45.228 - Electric sound
-02:58:45.229 - Electric sound
-02:58:45.241 - Electric sound
-02:58:45.242 - Electric sound
-02:58:45.242 - Electric sound
-02:58:45.243 - Electric sound
-02:58:45.282 - Electric sound
-02:58:45.309 - Electric sound
-02:58:45.421 - Electric sound
-02:58:45.421 - Electric sound
-02:58:45.421 - Electric sound
 02:59:19.011 - Elephant
 03:00:14.370 - Chainsaw
 03:01:04.780 - Tombi
@@ -116,7 +98,6 @@
 03:02:56.502 - Open the door
 03:03:38.486 - 
 03:04:00.011 - Pigeon
-03:04:04.765 - Pigeon
 03:04:53.280 - Drum can
 03:06:46.836 - Arabian sounds
 03:07:43.027 - Japaneseng

@@ -13,8 +13,12 @@ CROP_W = 346
 CROP_H = 78
 
 with open("annotations.txt", "w") as out_file:
-  with open("offsets.txt") as f:
+  with open("manual_offsets.txt") as f:
     for line in f:
+        # If the line starts with '#' then skip it
+        if line.startswith('#'):
+            continue
+
         t, t_human, _ = json.loads(line)
 
         # Video clips are the building blocks of longer videos. Technically, they are
