@@ -9,3 +9,7 @@ preoffsets.txt:  elia_noise_finder.py
 annotations.txt: manual_offsets.txt grab_shots_from_offsets.py
 	uv run python grab_shots_from_offsets.py
 	echo "Copy annotations.txt to manual_annotations.txt and fix them for further processing"
+
+sounds.zip:
+	uv run python extract_segments.py
+	uv run python putting_everything_together.py
