@@ -12,7 +12,6 @@ Result: after writing the program, it looks like that the number of candidate so
 """
 
 import math
-import collections
 
 def mean(numbers):
     return sum(numbers) / len(numbers)
@@ -33,61 +32,75 @@ def median(numbers):
 def stats(numbers):
     return (mean(numbers), stddev(numbers), median(numbers))
 
-def reverse_engineer(mean0, stddev0, median0):
-    required_sum = round(mean0 * 7)
+def recursive_reverse_engineer(how_many, mean0, stddev0, median0, chosen_a, chosen_b, results):
+    required_sum = round(mean0 * how_many)
+    missing_sum = required_sum - median0 - sum(chosen_a) - sum(chosen_b)
+    seg_length = how_many // 2
 
-    candidates = []
+    if len(chosen_b) == seg_length - 1:
+        f = missing_sum
+        proposed = (chosen_a + [median0,] + chosen_b + [f,])
+        # print(proposed, stddev(proposed), stddev0)
+        if f in range(chosen_b[-1], 101) and stddev(proposed) == stddev0:
+            results.append(proposed)
+        return
 
-    for a in range(0, median0+1):
-        missing_sum = required_sum - median0 - a
-        if 2 * median0 + 3 * 100 < missing_sum: continue
-        if 2 * a + 3 * median0 > missing_sum: break
+    try_min = 0
+    try_max = 0
+    if len(chosen_a) < seg_length:
+        if len(chosen_a) > 0:
+            try_min += chosen_a[-1] * (seg_length - len(chosen_a))
+        try_max += median0 * (seg_length - len(chosen_a))
+    try_min += median0 * (seg_length - len(chosen_b))
+    try_max += 100 * (seg_length - len(chosen_b))
 
-        for b in range(a, median0+1):
-            missing_sum = required_sum - median0 - a - b
-            if 1 * median0 + 3 * 100 < missing_sum: continue
-            if 1 * b + 3 * median0 > missing_sum: break
+    if try_min > missing_sum or try_max < missing_sum:
+        return
 
-            for c in range(b, median0+1):
-                missing_sum = required_sum - median0 - a - b - c
-                if 3 * 100 < missing_sum: continue
-                if 3 * median0 > missing_sum: break
+    if len(chosen_a) != seg_length:
+        start = 1
+        if len(chosen_a) > 0:
+            start = chosen_a[-1]
 
-                for d in range(median0, 101):
-                    missing_sum = required_sum - median0 - a - b - c - d
-                    if 2 * 100 < missing_sum: continue
-                    if 2 * d > missing_sum: break
+        end = median0
 
-                    for e in range(d, 101):
-                        # print(a,b,c,d,e)
-                        f = required_sum - median0 - a - b - c - d - e
-                        if f not in range(0, 101): continue
+        for x in range(start, end+1):
+            recursive_reverse_engineer(how_many, mean0, stddev0, median0, chosen_a + [x,], chosen_b, results)
+    else:
+        end = 100
+        start = median0
+        if len(chosen_b) > 0:
+            start = chosen_b[-1]
 
-                        proposed = [a,b,c,median0,d,e,f]
-                        if stddev(proposed) == stddev0:
-                            assert (mean(proposed) - mean0) < 0.00001
-                            candidates.append(sorted(proposed))
+        for x in range(start, end+1):
+            recursive_reverse_engineer(how_many, mean0, stddev0, median0, chosen_a, chosen_b + [x,], results)
 
-    return candidates
+    return results
 
-x = stats([1,2,3,4,5,6,7])
+
+x = stats([1,2,3,4,5])
 print(x)
-print(reverse_engineer(x[0], x[1], x[2]))
+print(recursive_reverse_engineer(5, x[0], x[1], x[2], [], [], []))
 
-x = stats([94, 97, 98, 98, 98, 99, 99])
-print(reverse_engineer(x[0], x[1], x[2]))
+x = stats([94, 97, 98, 99, 99])
+print(recursive_reverse_engineer(5, x[0], x[1], x[2], [], [], []))
 
+x = stats([42, 50, 58, 58, 71, 76, 86])
+# (63.0, 14.252819269985048, 58)
+print(recursive_reverse_engineer(7, x[0], x[1], x[2], [], [], []))
+
+N = 7
 while True:
     import random
-    # Generate 7 random numbers
-    random7 = [random.randint(0, 100) for x in range(7)]
+    # Generate N random numbers
+    randomN = [random.randint(0, 100) for x in range(N)]
     # Ensure mean is > 60
-    if sum(random7) < 60*7: continue
-    s7 = sorted(random7)
-    x = stats(s7)
-    r7s = reverse_engineer(x[0], x[1], x[2])
-    print(s7, stats(s7))
-    for r7 in r7s:
-        print(r7, stats(r7))
-    print("number of matches:", len(r7s))
-    assert s7 in r7s
+    if sum(randomN) < 60*N: continue
+    sN = sorted(randomN)
+    x = stats(sN)
+    rNs = recursive_reverse_engineer(N, x[0], x[1], x[2], [], [], [])
+    print(sN, stats(sN))
+    for rN in rNs:
+        print(rN, stats(rN))
+    print("number of matches:", len(rNs))
+    assert sN in rNs
