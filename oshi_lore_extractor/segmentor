@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+
+# Usage: segmentor.py -z BLOCK_SIZE -o OVERLAP_SEGMENTS -s SPLITTER_REGEX -f FILENAME_TEMPLATE INPUT_FILE
+# Reads MY_FILENAME.txt, and splits them into blocks.
+# The blocks are comprised of segments, each segment is delimited by
+# SPLITTER_REGEX. The blocks are enjoined segments with at most BLOCK_SIZE
+# (bytes) but the each segment would share OVERLAP_SEGMENTS with the previous
+# one. The blocks are output according to the FILENAME_TEMPLATE
+
+# Example: segmentor.py -z 10240 -o 2 -s '\.\s*$' -f "{filename}.{n}" myfile.txt
+
+
+# 🤖 The following is 99% coded by AI 🤖
+
+import re
+import sys
+import getopt
+
+def segment_file(input_file, block_size, overlap_segments, splitter_regex, filename_template):
+    # Read the input file
+    with open(input_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Split content into segments using the splitter regex
+    segments = re.split(splitter_regex, content)
+
+    # Reconstruct segments with original delimiters
+    if len(segments) > 1:
+        # Add back the delimiters after each segment (except the last)
+        for i in range(len(segments) - 1):
+            segments[i] += re.search(splitter_regex, content[content.find(segments[i]):]).group()
+
+    # Create blocks with overlap
+    block_num = 1
+    i = 0
+    while i < len(segments):
+        # Start with current segment
+        current_block = []
+        current_size = 0
+
+        # Add segments until block size is reached
+        while i < len(segments) and current_size + len(segments[i]) <= block_size:
+            current_block.append(segments[i])
+            current_size += len(segments[i])
+            i += 1
+
+        # If we have no segments in this block, break
+        if not current_block:
+            break
+
+        # Add overlap segments from previous block
+        if block_num > 1:
+            # Use overlap_segments from the end of the previous block
+            current_block = prev_block_overlap + current_block
+
+        # Join the block
+        block_content = ''.join(current_block)
+
+        # Generate filename
+        filename = filename_template.format(filename=input_file, n=block_num)
+
+        print(f"Writing to filename: {filename}")
+        # Write block to file
+        with open(filename, 'w', encoding='utf-8') as f:
+            f.write(block_content)
+
+        # Store current block for overlap
+        prev_block_overlap = current_block[-overlap_segments:]
+        block_num += 1
+
+def main():
+    # Default values
+    block_size = 10240
+    overlap_segments = 2
+    splitter_regex = r'\.\s*$'
+    filename_template = "{filename}.{n}"
+
+    # Parse command line arguments
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], "z:o:s:f:h", ["help"])
+    except getopt.GetoptError as err:
+        print(f"Error: {err}")
+        print("Usage: segmentor.py -z BLOCK_SIZE -o OVERLAP_SEGMENTS -s SPLITTER_REGEX -f FILENAME_TEMPLATE INPUT_FILE")
+        sys.exit(2)
+
+    for opt, arg in opts:
+        if opt in ("-z", "--block_size"):
+            block_size = int(arg)
+        elif opt in ("-o", "--overlap"):
+            overlap_segments = int(arg)
+        elif opt in ("-s", "--splitter"):
+            splitter_regex = arg
+        elif opt in ("-f", "--filename"):
+            filename_template = arg
+        elif opt in ("-h", "--help"):
+            print("Usage: segmentor.py -z BLOCK_SIZE -o OVERLAP_SEGMENTS -s SPLITTER_REGEX -f FILENAME_TEMPLATE INPUT_FILE")
+            print("  -z, --block_size: Maximum size of each block in bytes")
+            print("  -o, --overlap: Number of segments to overlap with previous block")
+            print("  -s, --splitter: Regex to split segments (default: '\\.\\s*$')")
+            print("  -f, --filename: Template for output filenames (default: '{filename}.{n}')")
+            print("  -h, --help: Show this help message")
+            sys.exit(0)
+
+    if len(args) != 1:
+        print("Error: Exactly one input file required.")
+        print("Usage: segmentor.py -z BLOCK_SIZE -o OVERLAP_SEGMENTS -s SPLITTER_REGEX -f FILENAME_TEMPLATE INPUT_FILE")
+        sys.exit(2)
+
+    input_file = args[0]
+    segment_file(input_file, block_size, overlap_segments, splitter_regex, filename_template)
+
+if __name__ == "__main__":
+    main()

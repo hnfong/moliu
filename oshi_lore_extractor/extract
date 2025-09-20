@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+./segmentor -z 10240 -o 2 -s '\n' -f "{filename}.{n}" "$1" >/dev/null
+LLM_MODEL=Qwen3-30B-A3B-Instruct
+
+for ff in "$1".[0-9]*; do
+    ask.py -d 2048 -m $LLM_MODEL -f "$ff" -- "$(cat prompt.txt | sed 's/$OSHI_NAME/Elia Stellaria/g;')"
+done
+

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [[ -f "$1.transcribe.srt" ]]; then
+    echo "Warning: output file $1.srt already exists" >&2
+    exit 0
+fi
+
+if [[ -f "$1.transcribe.txt" ]]; then
+    echo "Warning: output file $1.txt already exists" >&2
+    exit 0
+fi
+transcribe_file=$1
+shift
+
+ffmpeg -i "$transcribe_file" -af "silenceremove=start_periods=1:start_duration=0:start_threshold=-50dB: stop_periods=-1:stop_duration=0.02:stop_threshold=-50dB, apad=pad_dur=0.02" -ar 16000 -ac 1 -c:a pcm_s16le "$transcribe_file.wav"
+
+# Whisper has an issue finding the model dir, so the "whisper" below is a wrapper that hackarounds the issue and defaults to ggml-large-v3-turbo.bin
+./whisper --output-txt -of "$transcribe_file.transcribe" --max-context 20 -l en -f "$transcribe_file.wav" -of "$transcribe_file"
+
+# --condition-on-previous-text False (to avoid death loops)
+# mlx_whisper --model mlx-community/whisper-large-v3-turbo  "$transcribe_file.wav" --output-name "$transcribe_file" --output-format=srt --hallucination-silence-threshold 5 "$@"
+
+rm -vf "$transcribe_file.wav"

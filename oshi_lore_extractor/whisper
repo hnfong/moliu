@@ -1,0 +1,5 @@
+#!/bin/sh
+
+MODEL_DIR=~/maxx_local/whisper.cpp/models
+
+~/maxx_local/whisper.cpp/build/bin/whisper-cli -m "$MODEL_DIR"/ggml-large-v3-turbo.bin "$@"
