@@ -10,6 +10,7 @@ TRANSCRIPTIONS := $(shell ls downloads/*.webm | sed 's/webm/webm.transcribe.txt/
 EXTRACTIONS := $(shell ls downloads/*.webm | sed 's/webm/out/; s/downloads/extractions/;' )
 
 all:
+	# Dependent, so make them sequential.
 	make download_videos
 	make transcribe_videos
 	make extractions
@@ -19,7 +20,6 @@ download_videos: stream_urls.txt download_vids
 
 transcribe_videos: $(TRANSCRIPTIONS)
 extractions: $(EXTRACTIONS)
-	echo "$(EXTRACTIONS)"
 
 downloads/%.webm.transcribe.txt: downloads/%.webm
 	./transcribe $<
