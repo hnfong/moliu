@@ -4,8 +4,9 @@ import sys
 import glob
 import subprocess
 import os
+import time
 
-DOWNLOAD_DIR="downloads/"
+DOWNLOAD_DIR="downloads"
 
 try:
     os.makedirs(DOWNLOAD_DIR)
@@ -28,7 +29,7 @@ for url in urls:
     output_pattern = f"{video_id}.%(ext)s"
 
     # Check if file already exists (any audio format)
-    existing_files = glob.glob(f"{video_id}.*")
+    existing_files = [x for x in glob.glob(f"{DOWNLOAD_DIR}/{video_id}.*") if '.part' not in x]
     if existing_files:
         print(f"Skipping {url}: file already exists")
         continue
@@ -46,3 +47,6 @@ for url in urls:
         print(f"Downloaded: {url}")
     except subprocess.CalledProcessError as e:
         print(f"Failed to download {url}: {e}")
+
+    # Sleep a bit, hopefully placates any Youtube monitoring of automated bots or whatever.
+    time.sleep(120)
