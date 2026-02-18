@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+# LLM_MODEL=gemma-3-27B-it
+LLM_MODEL=Qwen3-235B-A22B-Instruct
+
+ask.py -d 2048 -m $LLM_MODEL -f "$1" -- "$(cat prompt_reduce.txt | sed 's/$OSHI_NAME/Elia Stellaria/g;')"
+
